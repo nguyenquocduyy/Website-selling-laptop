@@ -1,0 +1,137 @@
+#account {
+  .container {
+    .row {
+      #account__left {
+        width: 20%;
+        ul {
+          list-style-type: none;
+          li {
+            margin-left: 10px;
+            a {
+              color: black;
+              display: block;
+              padding: 10px;
+              border: 1px solid black;
+              text-decoration: none;
+            }
+          }
+          .active {
+            background-color: rgb(255, 166, 0);
+          }
+        }
+      }
+      #account__right {
+        width: 75%;
+        margin: 0 auto;
+        #myAccount {
+          display: block;
+          #thongTinTaiKhoan {
+            display: flex;
+            justify-content: space-around;
+            #account__img {
+              position: relative;
+              width: 200px;
+              height: 200px;
+              border-radius: 50%;
+              border: 1px solid black;
+              img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                padding: 5px;
+              }
+              i {
+                font-size: 25px;
+                color: white;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                position: absolute;
+                top: 45%;
+                left: 45%;
+                display: none;
+              }
+              &:hover {
+                cursor: pointer;
+                i {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        #trangThaiDonHang {
+          display: none;
+          #trangThaiDonHang_tblItem {
+            width: 100%;
+            text-align: center;
+            border-spacing: 10px;
+            #trangThaiDonHang_tblHead {
+              tr {
+                width: 100%;
+              }
+            }
+            #trangThaiDonHang_tblBody {
+              tr {
+                td {
+                  &:nth-child(1) {
+                    img {
+                      width: 150px;
+                      height: 150px;
+                    }
+                  }
+                  &:nth-child(4) {
+                    color: orangered;
+                  }
+                  &:nth-child(6) {
+                    color: orangered;
+                  }
+                }
+              }
+            }
+          }
+        }
+        #lichSuMuaHang {
+          display: none;
+          .lichSuMuaHang{
+            #tblItem {
+              width: 100%;
+              text-align: center;
+              border-spacing: 10px;
+              #lichSuMuaHang_tblHead {
+                tr {
+                  width: 100%;
+                }
+              }
+              #lichSuMuaHang_tblBody {
+                tr {
+                  td {
+                    &:nth-child(1) {
+                      img {
+                        width: 150px;
+                        height: 150px;
+                      }
+                    }
+                    &:nth-child(4) {
+                      color: orangered;
+                    }
+                    &:nth-child(6) {
+                      color: orangered;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        #doiMatKhau {
+          display: none;
+          form {
+            width: 50%;
+            margin: 50px auto;
+          }
+        }
+      }
+    }
+  }
+}

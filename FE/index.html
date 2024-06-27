@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT250</title>
+<!-- update -->
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- FONT GOOGLE -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row header-banner">
+                <img src="./image/banner_TOP.png" alt="">
+            </div>
+            <div class="row header-navbar">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+                    <div class="container nav-left-right">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./image/logo-fix.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse header-navbar--content col-md-10" id="navbarSupportedContent">
+                            <form class="">
+                                <div class="input-group navbar-search">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" aria-label=""
+                                        aria-describedby="basic-addon1" style="border-radius: 0 5px 5px 0;">
+                                </div>
+                            </form>
+                            <div class="navbar-select">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="./index.html#laptop">Laptop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./index.html#sales">Giảm giá</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./index.html#bestseller">Bán chạy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./cart.html">Giỏ hàng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./login.html">Tài khoản</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    </header>
+    <!-- banner -->
+    <section class="carousel">
+        <div class="container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="./image/Slide-Galaxy-Buds-Live-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/Slide-Mi-11-5G-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/Slide-oppo-reno5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- filter -->
+    <section id="laptop" class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <a href="#"><img src="./image/MacBook44-b_27.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/Acer44-b_25.jpg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/Asus44-b_1.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/Dell44-b_2.jpg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/HP44-b_27.jpg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/Huawei44-b_7.jpg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/Lenovo44-b_35.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/LG44-b_32.jpg" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="./image/MSI44-b_17.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      RAM
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">1GB</a>
+                      <a class="dropdown-item" href="#">2GB</a>
+                      <a class="dropdown-item" href="#">4GB</a>
+                      <a class="dropdown-item" href="#">8GB</a>
+                      <a class="dropdown-item" href="#">16GB</a>
+                      <a class="dropdown-item" href="#">32GB</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Vi xử lý
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">i3</a>
+                      <a class="dropdown-item" href="#">i5</a>
+                      <a class="dropdown-item" href="#">i7</a>
+                      <a class="dropdown-item" href="#">i9</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Màn hình
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#"> Nhỏ hơn 13 inch</a>
+                      <a class="dropdown-item" href="#">13 inch</a>
+                      <a class="dropdown-item" href="#">14 inch</a>
+                      <a class="dropdown-item" href="#">15 inch</a>
+                      <a class="dropdown-item" href="#"> Lớn hơn 15 inch</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Giá
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Dưới 10 triệu</a>
+                      <a class="dropdown-item" href="#">Từ 10 triệu đến 15 triệu</a>
+                      <a class="dropdown-item" href="#">Từ 15 triệu đến 20 triệu</a>
+                      <a class="dropdown-item" href="#">Từ 20 triệu đến 25 triệu</a>
+                      <a class="dropdown-item" href="#">Hơn 20 triệu</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Item -->
+    <section class="item">
+        <div class="container">
+            <div class="row item-title">
+                <h2>Sản phẩm mới</h2>
+            </div>
+            <div class="row item-content">
+                <div class="row">
+                    <div class="card-group col-md-3 col-sm-6">
+                        <a href="./view.html"></a>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>                                       
+                                </div>
+                                <span id="xemSP">Xem sản phẩm</span>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-around">
+                                        <s>
+                                            <span>5.000.000</span>
+                                        </s>
+                                        <span style="color: red;">4.999.999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bestseller  -->
+    <section id="bestseller" class="bestseller">
+        <div class="container">
+            <div class="row bestseller-title">
+                <h2>Sản phẩm bán chạy</h2>
+            </div>
+            <div class="row bestseller-content">
+                <div class="row">
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sales  -->
+    <section id="sales" class="sales">
+        <div class="container">
+            <div class="row sales-title">
+                <h2>Sản phẩm giảm giá</h2>
+            </div>
+            <div class="row sales-content">
+                <div class="row">
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-group col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="./view.html">
+                                <div class="card-header">
+                                    <img src="./image/laptop.jpg" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <p>copyright</p>
+        </div>
+    </footer>
+    <!-- script -->
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!-- BS4 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- back to top -->
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        var headerNav = document.getElementsByTagName('header');
+        console.log(headerNav);
+         window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+</script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+#payment {
+  .container {
+    #payment-title {
+      color: #212121;
+    }
+    #checkout-center {
+      #parentHorizontalTab {
+        ul {
+          margin-top: 1.5em;
+          display: flex;
+          li {
+            display: inline-block;
+            color: #000;
+            font-weight: bold;
+            font-size: 2em;
+            vertical-align: top;
+            text-align: center;
+            span {
+              display: block;
+              font-size: 0.5em;
+              color: #999;
+            }
+            &:first-child {
+              width: 50%;
+              border-right: 1px solid #999;
+            }
+            &:last-child {
+              width: 50%;
+            }
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+        #card-creditOrDebit{
+          display: block;
+        }
+        #payment-paypal-form {
+          display: none;
+          p {
+            color: #8b8b8b;
+            font-size: 0.95em;
+            line-height: 1.8em;
+            font-weight: 400;
+            margin: 10px 0;
+          }
+          .pp-img {
+            width: 65%;
+          }
+          .number-paymk input[type="submit"] {
+            background: #0879c9;
+            color: #ffffff;
+            text-align: center;
+            padding: 11px 19px;
+            border: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: 0.5s all;
+            -webkit-transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            &:hover {
+              background: #f45c5d;
+              transition: 0.5s all;
+              -webkit-transition: 0.5s all;
+              -moz-transition: 0.5s all;
+              -o-transition: 0.5s all;
+              -ms-transition: 0.5s all;
+            }
+            .btn-primary {
+              background-color: #3a5795;
+              font-family: "Open Sans", sans-serif;
+              color: #fff;
+              border: none;
+            }
+          }
+        }
+      }
+      .form-control {
+        border-radius: 0;
+      }
+    }
+    #codPayment{
+      position: relative;
+      padding: 0 1rem;
+      height: 30px;
+      line-height: 30px;
+      background: #1275ff;
+      border: 0px solid transparent;
+      a{
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}

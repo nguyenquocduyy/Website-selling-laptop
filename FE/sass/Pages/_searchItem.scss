@@ -1,0 +1,58 @@
+.searchItem {
+  .searchItem-title {
+    padding-left: 15px;
+  }
+  .searchItem-content {
+    padding: 15px 15px 0 15px;
+    border: 1px solid black;
+    .card-group {
+      padding-bottom: 30px;
+      .card {
+        padding: 0;
+        border: 1px solid black;
+        border-radius: 5px;
+        a {
+          text-decoration: none;
+          color: black;
+          display: block;
+          .card-header {
+            padding: 0;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .card-laptop-item {
+        margin: 0;
+        padding: 0;
+        a {
+          display: block;
+          height: 100%;
+          .card-header{
+            height: 50%;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .card-body{
+            height: 35%;
+          }
+          .card-footer{
+            height: 15%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2rem;
+            span{
+              &:nth-child(2){
+                font-size: 1.4rem;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

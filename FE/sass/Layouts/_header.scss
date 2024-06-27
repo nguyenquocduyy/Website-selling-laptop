@@ -1,0 +1,47 @@
+#header {
+  margin-bottom: 25px;
+  .container {
+    
+    .header-banner {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    .header-navbar {
+      position: relative;
+      .nav-left-right {
+        .header-navbar--content {
+          justify-content: space-evenly;
+          .navbar-select {
+            width: 100%;
+            ul {
+              display: flex;
+              justify-content: space-around;
+              li {
+                padding-left: 10px;
+                margin-right: 10px;
+              }
+            }
+            form {
+              padding: 10px;
+              width: 60%;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
